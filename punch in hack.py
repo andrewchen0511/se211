@@ -48,7 +48,7 @@ def login(k1, k2, name):
 # 主程式
 if __name__ == '__main__':
     begin()
-    for pw in range(32, 1000):
+    for pw in range(32, 380):
         pw1 = (pw / 32)
         pw2 = (pw % 32)
         login(pw1, pw2, usrname)
