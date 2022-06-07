@@ -10,7 +10,7 @@ driver = webdriver.Chrome(PATH)
 # employee = driver.find_element_by_name('employee_passwd')
 # employee.send_keys("%.2d%.2d"%(pw1,pw2))
 # print("%.2d%.2d"%(pw1,pw2))
-usrname = "Amy"  # 輸入帳號
+usrname = "Andrew"  # 輸入帳號
 
 options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(PATH)
@@ -20,7 +20,7 @@ def begin():
     driver.get('chrome://settings/')
     driver.execute_script('chrome.settingsPrivate.setDefaultZoom(0.6);')
     time.sleep(1)
-    driver.get('http://ntc.im/fn101/timeclock.php')
+    driver.get('http://ntc.im/se211/timeclock.php')
 
 
 def login(k1, k2, name):
