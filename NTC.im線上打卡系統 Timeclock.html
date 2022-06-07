@@ -1,24 +1,25 @@
-<html><head>
+<html>
+   <head>
 	<title>NTC.im線上打卡系統 Timeclock</title>  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/bootstrap.css">
+  <link rel="stylesheet" href="./theme/AdminLTE/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/ionicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/dataTables.css">
+  <link rel="stylesheet" href="./theme/AdminLTE/plugins/datatables/dataTables.bootstrap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/AdminLTE.css">
+  <link rel="stylesheet" href="./theme/AdminLTE/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-  <link rel="stylesheet" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/skin-blue-light.css">
+  <link rel="stylesheet" href="./theme/AdminLTE/dist/css/skins/skin-blue-light.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,18 +28,18 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-      <link rel="stylesheet" type="text/css" media="print" href="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/print.css">
+      <link rel='stylesheet' type='text/css' media='print' href='css/print.css' />
    </head>
-<body class="skin-blue-light sidebar-mini">
+<body class="hold-transition skin-blue-light sidebar-mini">
 
 <div id="wrapper">
 	
 <!-- Main Header -->
   <header class="main-header">    <!-- Logo -->
-    <a href="http://ntc.im/se211/index.php" class="logo">
+    <a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b><i class="fa fa-clock-o"></i></span>
-      <!-- logo for regular state and mobile devices --><span class="logo-lg"><img src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/logo.png" border="0"></span></a>
+      <!-- logo for regular state and mobile devices --><span class='logo-lg'><img border='0' src='images/logos/logo.png'></span></a>
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
@@ -50,13 +51,13 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
 
-<li><a href="http://www.historychannel.com/tdih">6 June 2022</a></li>
+<li><a href='http://www.historychannel.com/tdih'>7 June 2022</a></li>
 
-               <li><a href="http://ntc.im/se211/index.php"><i class="fa fa-home"></i> Home</a></li>
+               <li><a href='index.php'><i class='fa fa-home'></i> Home</a></li>
             
-               <li><a href="http://ntc.im/se211/login.php?login_action=admin"><i class="fa fa-globe"></i> Administration</a></li>
+               <li><a href='login.php?login_action=admin'><i class='fa fa-globe'></i> Administration</a></li>
             
-               <li><a href="http://ntc.im/se211/login.php?login_action=reports"><i class="fa fa-globe"></i> Reports</a></li> 
+               <li><a href='login.php?login_action=reports'><i class='fa fa-globe'></i> Reports</a></li> 
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
@@ -71,24 +72,24 @@
   <aside class="main-sidebar">
 
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar" style="height: auto;">
+    <section class="sidebar">
 	    
-      <!-- Left Side Interface For Employee's To Punch --><form role="form" name="timeclock" action="/se211/timeclock.php" method="post">
+      <!-- Left Side Interface For Employee's To Punch --><form role='form' name='timeclock' action='/se211/timeclock.php' method='post'>
         <div class="box box-primary">
                <div class="box-header with-border">
                  <h3 class="box-title">Please punch in below:</h3>
                </div>
-               <!-- /.box-header --><div class="box-body">
+               <!-- /.box-header --><div class='box-body'>
 	
-	<div class="form-group">
+	<div class='form-group'>
  
                            
                         
                            <label>Name:</label>
 			   
                         
-                           <select multiple="multiple" class="form-control" name="left_displayname" size="6" tabindex="1">
-                              <option value="">
+                           <select multiple class='form-control' name='left_displayname' size='6' tabindex=1>
+                              <option value =''>
                                  ...
                               </option>
                               <option>
@@ -175,17 +176,17 @@
                            </select>
     </div>
                         
-                     <div class="form-group">
+                     <div class='form-group'>
                            <label>Password:</label>
                         
-                           <input type="password" name="employee_passwd" maxlength="25" class="form-control" placeholder="Password">
+                           <input type='password' name='employee_passwd' maxlength='25' class='form-control' placeholder='Password'>
 			   </div>
 
-                     <div class="form-group">
+                     <div class='form-group'>
                            Status:
                         
-                           <select class="form-control" name="left_inout">
-                              <option value="" selected="selected">
+                           <select class='form-control' name='left_inout'>
+                              <option value =''>
                                  ...
                               </option>
                               <option>
@@ -203,29 +204,29 @@
                            </select>
 </div>
 
-                     <div class="form-group">
+                     <div class='form-group'>
                            <label>Notes:</label>
                         
-                           <input type="text" name="left_notes" maxlength="250" class="form-control">
+                           <input type='text' name='left_notes' maxlength='250' class='form-control'>
 </div>
-                     <div class="checkbox">
+                     <div class='checkbox'>
      
 		                      <label>
-		                        <input type="checkbox" name="remember_me" value="1"> Remember Me?
+		                        <input type='checkbox' name='remember_me' value='1'> Remember Me?
 		                      </label>
                                     
                  </div>      
                     
-                      <div class="form-group">
-<button type="submit" class="btn btn-lg btn-primary">Punch Status</button>
+                      <div class='form-group'>
+<button type='submit' class='btn btn-lg btn-primary'>Punch Status</button>
                          </div>
-                  </div>
+                  </div></form>
       <!-- /.sidebar-menu -->
-    </div></form></section>
+    </section>
     <!-- /.sidebar -->
   </aside>
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper" style="min-height: 1310px;">
+  <div class="content-wrapper">
 	  <!-- Main content -->
 	   <section class="content">
 		   
@@ -242,14 +243,14 @@
                 <p>複習、預習、上機實作是養成班的心法</p>
               </div>
 	      </div>
-	       <a href="http://ntc.im/se211/timeclock.php?printer_friendly=true" class="btn btn-app">
+	       <a href="timeclock.php?printer_friendly=true" class="btn btn-app">
                       <i class="glyphicon glyphicon-print"></i> Printer Friendly Page
                     </a>
 	</div>
 	<!-- /.extra messages -->
 	 <!-- debug caller 1 -->   <!-- start misc -->
 	<section class="content-header">
-	      <h1>Current Status Report<small>As of: 17:24, 6/6/2022</small>
+	      <h1>Current Status Report<small>As of: 15:48, 7/6/2022</small>
 	      </h1>
 	    </section>
         <div class="row">
@@ -264,7 +265,7 @@
 	      <!-- Current Display Messages -->
 	      <table class="table table-hover">
 
-                           <tbody><tr>
+                           <tr>
                               <th>
                                  Name
                               </th>
@@ -282,10 +283,10 @@
                               </th>
                               <th>
                                  Group
-                              
-                              </th><th>
+                              </td>
+                              <th>
                                     Notes
-                                 
+                                 </a>
                               </th>
                            </tr>
                            <tr>
@@ -296,10 +297,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:00
+                                 08:57
                               </td>
                               <td>
                                  SCE
@@ -319,7 +320,7 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
                                  09:00
@@ -342,10 +343,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:47
+                                 08:54
                               </td>
                               <td>
                                  SCE
@@ -361,14 +362,14 @@
                               <td>
                                  Chengs
                               </td>
-                             <!-- <td> --><td class="text-green"><i class="glyphicon glyphicon-log-in"></i>
-                                 in
+                             <!-- <td> --><td class="text-red"><i class="glyphicon glyphicon-log-out"></i>
+                                 out
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:24
+                                 09:28
                               </td>
                               <td>
                                  SCE
@@ -388,10 +389,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:57
+                                 08:52
                               </td>
                               <td>
                                  SCE
@@ -411,10 +412,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:49
+                                 08:39
                               </td>
                               <td>
                                  SCE
@@ -434,10 +435,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:22
+                                 08:52
                               </td>
                               <td>
                                  SCE
@@ -457,10 +458,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:20
+                                 08:39
                               </td>
                               <td>
                                  SCE
@@ -480,10 +481,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:02
+                                 09:00
                               </td>
                               <td>
                                  SCE
@@ -503,10 +504,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:56
+                                 08:54
                               </td>
                               <td>
                                  SCE
@@ -526,10 +527,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:08
+                                 09:01
                               </td>
                               <td>
                                  SCE
@@ -549,10 +550,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:42
+                                 08:39
                               </td>
                               <td>
                                  SCE
@@ -568,14 +569,14 @@
                               <td>
                                  Jose
                               </td>
-                             <!-- <td> --><td class="text-red"><i class="glyphicon glyphicon-log-out"></i>
-                                 out
+                             <!-- <td> --><td class="text-green"><i class="glyphicon glyphicon-log-in"></i>
+                                 in
                               </td> 
                               <td>
-                                 2/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 16:53
+                                 09:16
                               </td>
                               <td>
                                  SCE
@@ -595,10 +596,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:18
+                                 08:11
                               </td>
                               <td>
                                  SCE
@@ -618,10 +619,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:42
+                                 08:39
                               </td>
                               <td>
                                  SCE
@@ -641,10 +642,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:42
+                                 08:55
                               </td>
                               <td>
                                  SCE
@@ -664,10 +665,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:01
+                                 09:07
                               </td>
                               <td>
                                  SCE
@@ -687,10 +688,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:56
+                                 08:15
                               </td>
                               <td>
                                  SCE
@@ -710,10 +711,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:42
+                                 08:41
                               </td>
                               <td>
                                  SCE
@@ -733,10 +734,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 09:31
+                                 14:10
                               </td>
                               <td>
                                  SCE
@@ -756,10 +757,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:56
+                                 09:00
                               </td>
                               <td>
                                  SCE
@@ -779,10 +780,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 10:04
+                                 08:54
                               </td>
                               <td>
                                  SCE
@@ -848,10 +849,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:37
+                                 08:39
                               </td>
                               <td>
                                  SCE
@@ -871,10 +872,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:44
+                                 08:36
                               </td>
                               <td>
                                  SCE
@@ -894,10 +895,10 @@
                                  in
                               </td> 
                               <td>
-                                 6/6/2022
+                                 7/6/2022
                               </td>
                               <td>
-                                 08:20
+                                 08:24
                               </td>
                               <td>
                                  SCE
@@ -909,7 +910,7 @@
                                  
                               </td>
                            </tr>
-                        </tbody></table> 
+                        </table> 
       </div>
       <!-- /.box-body -->
     </div>
@@ -917,14 +918,14 @@
   </div>
 </div>
 <!-- debug end of display.php-->
-        </section></div>
+        </div>
         <!-- /.content-wrapper -->
 	
 	<!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-               <a class="footer_links" href="http://ntc.im/" target="_blank"> NTC.im線上打卡系統  1.1.0</a>
+               <a class=footer_links href='http://ntc.im' target='_blank'> NTC.im線上打卡系統  1.1.0</a>
 	</div>
 <!-- Default to the left  -->
 
@@ -941,11 +942,11 @@ Never Say Never.<!-- <a class="footer_links" href="http://nginx.org/">NGINX</a> 
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 2.2.3 -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/jquery-2.js"></script>
+<script src="./theme/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/bootstrap.js"></script>
+<script src="./theme/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/app.js"></script>
+<script src="./theme/AdminLTE/dist/js/app.min.js"></script>
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
@@ -953,15 +954,14 @@ Never Say Never.<!-- <a class="footer_links" href="http://nginx.org/">NGINX</a> 
      user experience. Slimscroll is required when using the
      fixed layout. -->
 <!-- DataTables -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/jquery_002.js"></script>
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/dataTables.js"></script>
+<script src="./theme/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="./theme/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
 <!-- SlimScroll -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/jquery.js"></script>
+<script src="./theme/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="NTC.im%E7%B7%9A%E4%B8%8A%E6%89%93%E5%8D%A1%E7%B3%BB%E7%B5%B1%20Timeclock_files/fastclick.js"></script>
+<script src="./theme/AdminLTE/plugins/fastclick/fastclick.js"></script>
 
+</body>
+</html>
 
-
-
-</body></html>
